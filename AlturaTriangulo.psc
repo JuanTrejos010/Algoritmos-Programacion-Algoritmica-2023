@@ -1,10 +1,10 @@
 Algoritmo AlturaTriangulo
 	Definir Base, Altura, Area Como Real
-	Escribir Base
+	Escribir Base ("Inserta la base del triángulo")
 	Leer Base
-	Escribir Altura
+	Escribir Altura ("Inserta la altura del triángulo")
 	Leer Altura
-	si Base >=0 o Altura >=0
+	si Base >0 o Altura >0
 		Area<-(Base*Altura)/2
 		Imprimir "El área del triángulo es " Area
 	SiNo
