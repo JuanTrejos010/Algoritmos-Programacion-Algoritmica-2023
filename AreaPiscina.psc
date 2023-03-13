@@ -7,7 +7,7 @@ Algoritmo AreaPiscina
 	Leer Largo
 	Escribir "Profundidad de la piscina"
 	Leer Profundidad
-	Escribir "¿Qué espacio se dejará entre la altura dekl agua y la altura de la piscina?"
+	Escribir "¿Qué espacio se dejará entre la altura del agua y la altura de la piscina?"
 	Leer Espacio
 	Si Ancho>0 y Largo>0 y Profundidad>0
 		Volumen<-(Ancho*Largo*(Profundidad-Espacio))/2
