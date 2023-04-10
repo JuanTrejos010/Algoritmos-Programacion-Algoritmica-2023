@@ -1,5 +1,5 @@
 Algoritmo NumerosPrimosYCompuestos
-	Definir VarA, Divisor Como Entero
+	Definir VarA, Divisor, DiviT Como Entero
 	Escribir "Inserta el número para calcular."
 	Leer VarA
 	Mientras VarA<=0
@@ -8,9 +8,21 @@ Algoritmo NumerosPrimosYCompuestos
 		Escribir "Inserta el número para calcular."
 		Leer VarA
 	FinMientras
-	Divisor=2
-	Mientras (VarA/Divisor)>1
-		Imprimir VarA
+	Divisor=1
+	DiviT=0
+	Mientras Divisor <= VarA Y DiviT<=3
+		Si VarA MOD Divisor == 0
+			DiviT=DiviT+1
+		FinSi
+		Divisor=Divisor+1
 	FinMientras
+	Si DiviT >= 3
+		Imprimir VarA " es un número compuesto."
+	SiNo
+		Si DiviT == 2
+			Imprimir VarA " es un número primo."
+		SiNo
+			Imprimir "El número 1 no es ni primo ni compuesto al solo ser divisible por sí mismo."
+		FinSi
+	FinSi
 FinAlgoritmo
-
