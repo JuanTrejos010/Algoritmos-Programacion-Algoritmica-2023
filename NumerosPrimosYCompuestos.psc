@@ -1,5 +1,6 @@
 Algoritmo NumerosPrimosYCompuestos
 	Definir VarA, Divisor, DiviT Como Entero
+	Imprimir "Calcule si un número es primo o compuesto."
 	Escribir "Inserta el número para calcular."
 	Leer VarA
 	Mientras VarA<=0
