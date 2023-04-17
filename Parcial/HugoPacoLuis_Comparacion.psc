@@ -1,58 +1,69 @@
 Algoritmo HugoPacoLuis_Comparacion
 	Definir SalHugo, SalPaco, SalLuis como Entero
-	Imprimir "Calcular quién entre Hugo, Paco y Luis gana más en salario?"
-	Imprimir "¿Cuánto gana Hugo?"
+	Imprimir "Calcular qui�n entre Hugo, Paco y Luis gana m�s en salario?"
+	Imprimir ""
+	Esperar 100 Milisegundos
+	Imprimir "�Cu�nto gana Hugo?"
 	Leer SalHugo
-	Imprimir "¿Cuánto gana Paco?"
+	Imprimir "�Cu�nto gana Paco?"
 	Leer SalPaco
-	Imprimir "¿Cuánto gana Luis?"
+	Imprimir "�Cu�nto gana Luis?"
 	Leer SalLuis
 	Mientras SalHugo<0 O SalPaco <0 O SalLuis <0
-		Imprimir "Datos inválidos."
+		Imprimir "Datos inv�lidos."
 		Imprimir ""
-		Imprimir "¿Cuánto gana Hugo?"
+		Imprimir "�Cu�nto gana Hugo?"
 		Leer SalHugo
-		Imprimir "¿Cuánto gana Paco?"
+		Imprimir "�Cu�nto gana Paco?"
 		Leer SalPaco
-		Imprimir "¿Cuánto gana Luis?"
+		Imprimir "�Cu�nto gana Luis?"
 	FinMientras
-	Si SalHugo>SalPaco
-		Si SalHugo>SalLuis
-			Imprimir "Hugo es el que gana más, con " SalHugo "."
+	Esperar 400 Milisegundos
+	Imprimir ""
+	Si SalHugo > SalPaco 
+		Si SalHugo > SalLuis
+			Imprimir "Hugo tiene el mayor salario, con " SalHugo ","
 			Si SalPaco == SalLuis
-				Imprimir "Paco y Luis ganan igual, con " SalPaco "."
+				Imprimir "Paco y Luis tienen el mismo salario, con " SalPaco "."
 			SiNo
-				Si SalPaco>SalLuis
-					Imprimir "Luis gana menos, con " SalLuis "."
+				Si SalPaco > SalLuis
+					Imprimir "Luis tiene el menor salario, con " SalLuis "."
 				SiNo
-					Imprimir "Paco gana menos, con " SalPaco "."
+					Imprimir "Paco tiene el menor salario, con " SalPaco "."
 				FinSi
 			FinSi
 		SiNo
-			Si SalHugo == SalLuis
-				Imprimir "Hugo y Luis ganan igual, con " SalHugo "."
-				Imprimir "Paco gana menos, con " SalPaco "."
-			SiNo
-				Imprimir "Luis es el que gana más, con " SalLuis "."
+			Si SalHugo==SalLuis
+				Imprimir "Hugo y Luis tienen el mismo salario, con " SalHugo "."
+			SiNo 
+				Imprimir "Luis tiene mayor salario, con " SalLuis "."
 			FinSi
 		FinSi
 	SiNo
-		Si SalPaco>SalLuis
-			Imprimir "Paco es el que gana más, con " SalPaco "."
-			Si SalHugo == SalLuis
-				Imprimir "Hugo y Luis ganan igual, con " SalLuis
-			SiNo
-				Si SalHugo<SalLuis
-					Imprimir "Hugo gana menos, con " SalHugo
+		Si SalPaco > SalHugo
+			Si SalPaco>SalLuis
+				Imprimir "Paco tiene el mayor salario, con " SalPaco ","
+				Si SalHugo == SalLuis
+					Imprimir "Hugo y Paco tienen el mismo salario, con " SalPaco "."
 				SiNo
-					Imprimir "Luis gana menos, con " SalLuis "."
+					Si SalHugo < SalLuis
+						Imprimir "Hugo tiene el menor salario, con " SalHugo "."
+					SiNo
+						Imprimir "Luis tiene el menor salario, con " SalLuis "."
+					FinSi
+				FinSi
+			SiNo
+				Si SalPaco == SalLuis
+					Imprimir "Paco y Luis tienen el mismo salario, con " SalPaco "."
+				SiNo
+					Imprimir "Luis tiene el mayor salario, con " SalLuis "."
 				FinSi
 			FinSi
 		SiNo
 			Si SalLuis>SalHugo
-				Imprimir "Luis gana más, con " SalLuis
+				Imprimir "Luis tiene el mayor salario, con " SalLuis "."
 			SiNo
-				Imprimir "Hugo, Paco y Luis ganan lo mismo, con " SalHugo "."
+				Imprimir "Los salarios de Hugo, Paco y Luis son iguales, con " SalHugo "."
 			FinSi
 		FinSi
 	FinSi
