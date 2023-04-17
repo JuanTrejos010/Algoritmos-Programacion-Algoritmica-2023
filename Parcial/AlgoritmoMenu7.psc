@@ -1,36 +1,54 @@
 Algoritmo AlgoritmoMenu7
 	Imprimir "Juan Trejos"
 	Definir Accion Como Entero
-	Imprimir "Bienvenido al menú."
+	Definir Dinero, Consignacion, Retiro Como Real
+	///Definir Contrasena, ContrasenaA, ContrasenaB Como Caracter
+	Dinero <-2000000
+	///Contrasena<-"ABCD"
+	Imprimir "Para pruebas, el dinero inicial es " Dinero "."
+	Imprimir "Bienvenido al menÃº."
 	Imprimir" "
-	Imprimir "¿Qué acción desea realizar hoy?"
+	Imprimir "Â¿QuÃ© acciÃ³n desea realizar hoy?"
 	Esperar 100 Milisegundos
 	Imprimir "Las opciones son:"
 	Imprimir "1) Consignar | 2) Retirar | 3) Consultar | 4) Pagar servicios"
-	Imprimir "5) Consignar | 6) Retirar | 7) Consultar"
+	Imprimir "5) Transferencias | 6) Cambio de contraseÃ±a | 7) Salir"
 	Leer Accion
 	Mientras Accion<1 O Accion>7
-		Imprimir "La instrucción debe estar entre 1 y 7."
+		Imprimir "La instrucciÃ³n debe estar entre 1 y 7."
 		Leer Accion
 	FinMientras
-	Imprimir "No está funcional todavía."
 	Segun Accion Hacer
 		1:
 			Imprimir "Consignar"
+			Imprimir "El dinero es " Dinero
+			Imprimir "Â¿CuÃ¡nto desea consignar?"
+			Leer Consignacion
+			Dinero= Dinero+Consignacion
+			Imprimir "Se consignarÃ¡ " Consignacion ". Ahora el saldo es " Dinero "."
 		2:
 			Imprimir "Retirar"
+			Imprimir "Â¿CuÃ¡nto desea retirar?"
+			Leer Retiro
+			Dinero= Dinero-Retiro
+			Imprimir "Se retirarÃ¡ " Consignacion ". Ahora el saldo es " Dinero "."
 		3:
 			Imprimir "Consultar"
+			Imprimir "El saldo de la cuenta es " Dinero "."
 		4:
-			Imprimir "Consignar"
+			Imprimir "Pagar servicios"
+			Imprimir "En prueba"
 		5:
-			Imprimir "Retirar"
+			Imprimir "Transferencias"
+			Imprimir "Â¿QuÃ© desea transferir?"
+			Imprimir "En prueba"
 		6:
-			Imprimir "Cambio de contraseña"
+			Imprimir "Cambio de contraseÃ±a"
+			Imprimir "En prueba"
 		7:
 			Imprimir "Salir"
 		De Otro Modo:
-			Imprimir "¿Qué pasó?"
+			Imprimir "Â¿QuÃ© pasÃ³?"
 	Fin Segun
-	
+	Imprimir "Gracias por usar el sistema."
 FinAlgoritmo
