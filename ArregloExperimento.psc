@@ -4,12 +4,14 @@ Algoritmo ArregloExperimento
 	Escribir "Experimento con arreglos."
 	Escribir ""
 	Para i <- 1 Hasta cantidad Con Paso 1 Hacer
-		Imprimir "Ingresa un número para la posiciòn " i
+		Imprimir "Ingresa un nÃºmero para la posiciÃ²n " i
 		Leer num[i]
 	FinPara
+	Borrar Pantalla
 	Esperar 100 Milisegundos
-	Escribir "Los números ingresados son: "
+	Escribir "Los nÃºmeros ingresados son: "
 	Para i <- 1 Hasta cantidad Con Paso 1 Hacer
-		Imprimir Sin Saltar num[i] " -- "
+		Imprimir Sin Saltar num[i] " "
 	FinPara
+	Imprimir ""
 FinAlgoritmo
