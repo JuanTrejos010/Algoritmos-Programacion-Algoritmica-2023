@@ -1,4 +1,5 @@
 Algoritmo ArregloExperimento
+	Definir cantidad Como Entero
 	cantidad = 5
 	Dimension num[5]
 	Escribir "Experimento con arreglos."
