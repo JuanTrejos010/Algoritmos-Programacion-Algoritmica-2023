@@ -1,5 +1,5 @@
 Algoritmo DatosUsuario
-	Definir Nombre, Edad, Aficion, Estudios Como Entero
+	Definir Nombre, Edad, Aficion, Estudios Como Caracter
 	Escribir "Usuarios"
 	Escribir "¿Cuál es su nombre?"
 	Leer Nombre
