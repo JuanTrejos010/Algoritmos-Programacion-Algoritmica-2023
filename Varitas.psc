@@ -1,6 +1,6 @@
 Algoritmo Varitas
 	Definir VaraMichelle, VaraMariana, VaraLaura, VaraJennifer Como Real
-	Imprimir "¿Quién tiene la vara más corta?"
+	Imprimir "Â¿QuiÃ©n tiene la vara mÃ¡s corta?"
 	Imprimir "Escribe la medida de la vara de Michelle."
 	Leer VaraMichelle
 	Imprimir "Escribe la medida de la vara de Mariana."
@@ -18,10 +18,10 @@ Algoritmo Varitas
 			Si VaraLaura < VaraMichelle & VaraLaura < VaraMariana & VaraLaura < VaraJennifer
 				Imprimir "La vara de Laura es la menor con " VaraMariana "."
 			SiNo
-				Si VaraJennifer < VaraMichelle & VaraJennifer < VaraMariana & VaraJennifer < VaraJennifer
+				Si VaraJennifer < VaraMichelle & VaraJennifer < VaraMariana & VaraJennifer < VaraLaura
 					Imprimir "La vara de Jennifer es la menor con " VaraMariana "."
 				SiNo
-					Imprimir "Hay una o más varas con el mismo valor."
+					Imprimir "Hay una o mÃ¡s varas con el mismo valor."
 				FinSi
 			FinSi
 		FinSi
