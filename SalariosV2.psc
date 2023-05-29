@@ -1,23 +1,24 @@
 Algoritmo Salarios
 	Definir SalarioBas, HorasExtrasDiu, HorasExtrasNoc, HorasExtrasDiuD, TrabajoHorasExtras Como Real
 	SalarioBas<-1300000
-	Escribir "N˘mero de horas extras diurnas no dominicales"
+	Escribir "Calcular salario total de horas extras."
+	Escribir "N√∫mero de horas extras diurnas no dominicales"
 	Leer HorasExtrasDiu
-	Escribir "N˘mero de horas extras nocturnas"
+	Escribir "N√∫mero de horas extras nocturnas"
 	Leer HorasExtrasNoc
-	Escribir "N˘mero de horas extras dominicales diurnas"
+	Escribir "N√∫mero de horas extras dominicales diurnas"
 	Leer HorasExtrasDiuD
 	// Las horas extras no pueden ser mayores a 10
 	Si HorasExtrasDiu>10
-		Imprimir "Las horas extras no pueden ser m·s de 10. Las horas extras diurnas se redujeron a 10."
+		Imprimir "Las horas extras no pueden ser m√°s de 10. Las horas extras diurnas se redujeron a 10."
 		HorasExtrasDiu=10
 	FinSi
 	Si HorasExtrasNoc>10
-		Imprimir "Las horas extras no pueden ser m·s de 10. Las horas extras nocturnas se redujeron a 10."
+		Imprimir "Las horas extras no pueden ser m√°s de 10. Las horas extras nocturnas se redujeron a 10."
 		HorasExtrasNoc=10
 	FinSi
 	Si HorasExtrasDiuD>10
-		Imprimir "Las horas extras no pueden ser m·s de 10. Las horas extras dominicales diurnas se redujeron a 10."
+		Imprimir "Las horas extras no pueden ser m√°s de 10. Las horas extras dominicales diurnas se redujeron a 10."
 		HorasExtrasDiuD=10
 	FinSi
 	TrabajoHorasExtras<-(SalarioBas/240)*((1.25*HorasExtrasDiu)+(1.75*HorasExtrasNoc)+(1.75*HorasExtrasDiuD))
