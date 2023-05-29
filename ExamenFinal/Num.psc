@@ -24,18 +24,18 @@ Algoritmo Num
 	Segun Opcion1 hacer
 		1:
 			Resultado=Num1+Num2+Num3+Num4+Num5+Num6+Num7+Num8+Num9+Num10
-			Escribir Resultado
+			Escribir "Suma: " Resultado
 		2:
 			Resultado=Num1-Num2-Num3-Num4-Num5-Num6-Num7-Num8-Num9-Num10
-			Escribir Resultado
+			Escribir "Resta: " Resultado
 		3:
 			Resultado=Num1*Num2*Num3*Num4*Num5*Num6*Num7*Num8*Num9*Num10
-			Escribir Resultado
+			Escribir "Multiplicación: " Resultado
 		4:
 			Resultado=Num1/Num2/Num3/Num4/Num5/Num6/Num7/Num8/Num9/Num10
-			Escribir Resultado
+			Escribir "División: " Resultado
 		5: 
 			Resultado=(Num1+Num2+Num3+Num4+Num5+Num6+Num7+Num8+Num9+Num10)/10
-			Escribir Resultado
+			Escribir "Promedio: " Resultado
 	FinSegun
 FinAlgoritmo
